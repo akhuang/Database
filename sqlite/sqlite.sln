@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteDemo", "sqlite\SqliteDemo.csproj", "{5199C89A-1CB3-4D48-B680-872C81AC05DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5199C89A-1CB3-4D48-B680-872C81AC05DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5199C89A-1CB3-4D48-B680-872C81AC05DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5199C89A-1CB3-4D48-B680-872C81AC05DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5199C89A-1CB3-4D48-B680-872C81AC05DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
