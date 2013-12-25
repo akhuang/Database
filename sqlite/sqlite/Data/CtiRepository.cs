@@ -15,10 +15,11 @@ namespace SqliteDemo.Data
             {
                 cnn.Open();
                 List<LINE> result = cnn.Query<LINE>(
-                    @"SELECT AgentId, AgentName  FROM VoiceCardLine").ToList<LINE>();
+                    @"SELECT Id,AgentId, AgentName  FROM VoiceCardLine").ToList<LINE>();
                 return result;
             }
         }
+
         public void Save(List<LINE> list)
         {
             using (var conn = SimpleDbConnection())
@@ -29,7 +30,16 @@ namespace SqliteDemo.Data
                     conn.Execute("insert into VoiceCardLine (AgentId,AgentName) Values(@AgentId,@AgentName)", item);
                 }
             }
+        }
 
+        public void UpdateReceivedCount(int id, string agentName)
+        {
+            using (var conn = SimpleDbConnection())
+            {
+                conn.Open();
+
+                conn.Execute("update VoiceCardLine set AgentName =@AgentName where Id=@Id", new { Id = id, AgentName = agentName });
+            }
         }
     }
 }

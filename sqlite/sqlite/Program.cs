@@ -25,6 +25,9 @@ namespace SqliteDemo
             {
                 Console.WriteLine("get list success");
             }
+
+            ctiRep.UpdateReceivedCount(1, "P");
+            List<LINE> listInfo1 = ctiRep.GetList();
             Console.ReadKey();
         }
     }

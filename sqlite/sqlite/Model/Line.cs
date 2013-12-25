@@ -11,6 +11,11 @@ namespace SqliteDemo.Model
         {
             Dial = new char[10];
         }
+        public int Id
+        {
+            get;
+            set;
+        }
         /// <summary>
         /// 通道类型
         /// </summary>
